@@ -8,6 +8,9 @@ import { AboutComponent } from './about/about.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { TermsComponent } from './terms/terms.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ArticlesModule } from './articles/articles.module';
+import { ProductsModule } from './products/products.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
   ],
   imports: [
     BrowserModule,
+    NgbModule,
+    ArticlesModule,
+    ProductsModule,
     AppRoutingModule
   ],
   providers: [],
